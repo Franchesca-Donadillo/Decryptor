@@ -20,10 +20,27 @@ user_input = input("Enter some characters: ")
 output = ""
 
 # loop all throughout the user input
-# change * into a
-# change & into e
-# change # into i
-# change + into o
-# change ! into u
+for i in range(len(user_input)):
+    # change * into a
+    if user_input[i] == "*":
+        output += "a"
+    # change & into e
+    elif user_input[i] == "&":
+        output += "e"
+    # change # into i
+    elif user_input[i] == "#":
+        output += "i"
+    # change + into o
+    elif user_input[i] == "+":
+        output += "o"
+    # change ! into u
+    elif user_input[i] == "!":
+        output += "u"
+    else:
+        output += user_input[i]
+
 # add partition
+star = "*"*60
+starla = star.center(65)
+
 # print the decrypted text of the user
