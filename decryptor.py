@@ -44,3 +44,6 @@ star = "*"*60
 starla = star.center(65)
 
 # print the decrypted text of the user
+console.print("\n" + f"[bold green]{starla}[/bold green]" + "\n\nThe decrypted text is ", end = "")
+console.print(output, style = "decrypt")
+console.print("\n" + starla, style = "blinky")
