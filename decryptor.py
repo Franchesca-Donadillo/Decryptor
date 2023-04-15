@@ -11,7 +11,14 @@ from rich import print
 design = Theme({"title": "bold magenta", "decrypt": "underline bold yellow", "blinky": "bold green blink"})
 console = Console(theme = design)
 
+title = "Problem_2 - Decryption"
+new_title = title.center(55).upper()
+console.print("\n" + new_title + "\n", style = "title")
+
 # ask user input
+user_input = input("Enter some characters: ")
+output = ""
+
 # loop all throughout the user input
 # change * into a
 # change & into e
